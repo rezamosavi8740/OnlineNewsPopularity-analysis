@@ -3,182 +3,125 @@
 In this task, we predict the value of the shares column by pre-processing the data and checking different machine-learning models.
 
 ## Checking correlation
-[![npm version](image/cor.png)]
 
-# LaTeX Template Generator [![npm version](http://img.shields.io/npm/v/generator-latex-template.svg?style=flat)](https://npmjs.org/package/generator-latex-template "View this project on npm")
+# Divar desktop app
 
-> Generates latex templates (e.g., for thesis, workshops, conferences, IEEEtran, LNCS, ...) out of "micro-templates"
+<p align="center">
+  <img src = "Client/src/main/resources/com/example/image/redDivarLogo.png" height = "350">
+</p>
 
-See the **[talk about the generator](https://github.com/dante-ev/Vortraege_Tagungen/blob/master/2019-Herbst/Oliver%20Kopp%20-%20The%20LaTeX%20Template%20Generator%20-%20dante2019-herbst.pdf)** for an overview on the aims and the general concept.
+## Developers
 
-## Background information
+**Update Galaxy team:**
+- [**Mohammad Rouintan**](https://github.com/MohammadRouintan)
+- [**Abolfazl Ramezanian**](https://github.com/abolfazl30not30)
+- [**Mahdi Ahmadi**](https://github.com/mr-robber)
+- [**Reza Mosavi**](https://github.com/rezamosavi8740)
+\
+  \
+  _Computer Science students at Shahid Beheshti University_
+  \
+  Mathematical sciences' faculty
+  
+### Summary
+This project is developed as the final project for our advanced Java programming course at SBU.
+\
+Our application is meant to be a template of Divar desktop application.
+### Features
+  
+- __**Graphical User Interface**__
+  \
+  \
+  contains an impressive GUI, designed and implemented by JavaFX technology
 
-There are many latex templates out there.
-All of them make use of certain packages such as [hyperref], [listings], or [minted].
-The packages have to be a) included in the `.tex` file somehow and b) configured.
-Moreover, some packages offer interfaces (such as new commands or new environments) to users.
-Minimal examples help to understand how a package works.
+  -  _login and sign up_
+  
+    <p align="center">
+      <img src = "ReadMeContent/1.png" height = "350">
+    </p>
 
-The aim of the repository is to provide for each common latex package
+    <p align="center">
+      <img src = "ReadMeContent/2.png" height = "350">
+    </p>
 
-1. Configuration
-2. Usage example
+    <p align="center">
+      <img src = "ReadMeContent/3.png" height = "350">
+    </p>
 
-and a generation into templates:
+  - _All Ads Section_
+    <p align="center">
+      <img src = "ReadMeContent/4.png" height = "350">
+    </p>
+  
+  - -full View of Ads-
+    <p align="center">
+      <img src = "ReadMeContent/11.png" height = "350">
+    </p>
+    
+    <p align="center">
+      <img src = "ReadMeContent/12.png" height = "350">
+    </p>
+    
+  - _Categories Section_
+    <p align="center">
+      <img src = "ReadMeContent/5.png" height = "350">
+    </p>
+    
+  - _Add Ads Section_
+    <p align="center">
+      <img src = "ReadMeContent/6.png" height = "350">
+    </p>
+  
+    <p align="center">
+      <img src = "ReadMeContent/7.png" height = "350">
+    </p>
+    
+  - _Chat Section_
+    <p align="center">
+      <img src = "ReadMeContent/chat.png" height = "350">
+    </p>
+   - _My Divar Section_
+    <p align="center">
+      <img src = "ReadMeContent/9.png" height = "350">
+    </p>
+   - -Saved Section-
+    <p align="center">
+      <img src = "ReadMeContent/10.png" height = "350">
+    </p>
 
-1. Support for [ACM](https://ctan.org/pkg/acmart), [IEEE](https://ctan.org/pkg/ieeetran), LNCS, [KOMA-Script](https://ctan.org/pkg/koma-script)
-2. Support for separate documents which require `--shell-escape` and not.
-3. Support for integrated pdflatex and lualatex documents
 
-## Talks
 
-- [Oliver Kopp - The LaTeX Template Generator](https://github.com/dante-ev/Vortraege_Tagungen/blob/master/2019-Herbst/Oliver%20Kopp%20-%20The%20LaTeX%20Template%20Generator%20-%20dante2019-herbst.pdf) - a talk on the motivation, user experience, and the contribution
+- __**Object-orientation**__
 
-## Usage
+this project is implemented in an absolutely object-oriented approach. since we used Java for this project,
+we tried to use the full power of Java in terms of object orientation. the project is very well organized and maintainable
+because every part of the program is developed within a separate package obviously-named. Each package consists of 
+classes and fxml files of its own. we tried to obey the SOLID rules as much as we could in this project.
 
-One has to install [Node.js](https://nodejs.org/en/) version 14 to get this generator running.
-On Windows, one can just run `choco install nodejs-lts` to get the right version of Node.js.
 
-On Linux, one can start using the generator directly using the node execution wrapper [npx](https://www.npmjs.com/package/npx):
+- __**Version Control tools**__
 
-```bash
-npx -p yo -p generator-latex-template -c 'yo latex-template'
-```
+Our team work was organized and merged and developed upon Git and we made separate branches for different kind of tasks
+and after implementing an specific part of the project the team members would push the changes and notifying the
+maintainer of the project to merge their changes after checking their provided code.
 
-### Installing `generator-latex-template`
 
-In case one wants to have the generator installed permanently or `npx` does work as expected, one can install `generator-latex-template` using following command:
+- __**Database**__
 
-```bash
-npm install -g generator-latex-template
-```
+For this project MongoDB database is used for storing data on server.
+\
+Here is the schema:
+<p align="center">
+  <img src = "ReadMeContent/Screenshot 2022-07-12 163613.png" height = "350">
+</p>
 
-### Using the generator
+- __**Socket Programming**__
 
-One can run the generator by invoking this command on a command prompt:
+This project consists of two different applications, a client app and a server app developed by the socket programming tools and 
+concpets in Java
 
-```bash
-yo latex-template
-```
+- __**Multi-threading**__
 
-## How to update the document
-
-⚠️ The template generator overwrites `main.tex` on each run. This will destroy your work. ⚠️
-
-You can use the magic of `git` to prevent that:
-
-1. After repository initialization:
-
-   - `git commit` to save your work
-   - `git checkout -b template` - to create a branch with initial template (required for updating)
-   - `git checkout main` switch back to your thesis
-
-2. Work on the `main` branch
-3. In case an update comes in, update the `template` branch
-
-   - `git checkout template` - switch to the `template` branch
-   - `yo latex-template` - generate new template
-   - `git commit` - save the new template
-   - `git checkout main` - switch to your work
-   - `git merge template` - merge in the template changes
-   - resolve conflicts ^^ (Hint: IntelliJ Community Edition has a [great conflict resolving tool](https://www.jetbrains.com/help/idea/resolving-conflicts.html#))
-
-## Resources
-
-- [IEEE](https://latextemplates.github.io/IEEE/) - example: [paper-conference-minted.tex](https://github.com/latextemplates/IEEE/blob/main/paper-conference-minted.tex)
-- [LNCS](https://latextemplates.github.io/LNCS/) - example: [paper.tex](https://github.com/latextemplates/LNCS/blob/main/paper.tex)
-- [scientific-thesis-template](https://latextemplates.github.io/scientific-thesis-template/) - example: [latexhints-english.tex](https://github.com/latextemplates/scientific-thesis-template/blob/main/latexhints-english.tex)
-- [alpenwasser/TeX](https://github.com/alpenwasser/TeX)
-
-## Development roadmap
-
-- [x] Create directory structure
-- [ ] Sort in examples from the [scientific-thesis-template](http://latextemplates.github.io/scientific-thesis-template/)
-- [ ] Have scientific-thesis-template generated completely.
-- [x] Have LNCS generated completely.
-- [ ] Have [uni-stuttgart-dissertation-template](https://github.com/latextemplates/uni-stuttgart-dissertation-template) generated automatically.
-
-In the long run, the contents of the `paper.tex` (and similar) files in repositories of the [latextemplates](https://latextemplates.github.io/) organization should be generated automatically.
-
-## Development hints
-
-- Templating language: <https://ejs.co/>
-- Conditional questions: <https://stackoverflow.com/a/18706640/873282>.
-- Types of prompts: <https://github.com/SBoudrias/Inquirer.js#prompt-types>
-  - E.g,. [Question](https://github.com/SBoudrias/Inquirer.js#question)
-- Add a new question
-  - Also adapt `__tests__/app.js`
-  - Execute tests with `npx jest`
-- Test locally
-  - Create empty directory ("target directory")
-  - Change to the target directory
-  - Run `npx yo <path-to-git-repository>`
-    - Windows: `npx yo c:\git-repositories\latextemplates\generator-latex-template`
-  - Parameters can be set using command line
-    - Linux: `npx yo /tmp/repo --documentclass=lncs --papersize=a4 --latexcompiler=pdflatex --bibtextool=bibtex --overleaf=false --texlive=2022 --docker=false --lang=en --font=default --listings=listings --enquotes=csquotes --tweak_outerquote=babel --todo=pdfcomment --examples=true --howtotext=true`
-    - Windows: `npx yo c:\git-repositories\latextemplates\generator-latex-template --documentclass=scientific-thesis --papersize=a4 --latexcompiler=pdflatex --bibtextool=bibtex --overleaf=false --texlive=2022 --lang=en --font=default --listings=listings --enquotes=csquotes --tweak_outerquote=babel --todo=pdfcomment --examples=true --howtotext=true`
-    - Windows automatic generation of a LNCS template (with pdflatex and bibtex): `npx yo c:\git-repositories\latextemplates\generator-latex-template --documentclass=lncs ---papersize=a4 --latexcompiler=pdflatex --bibtextool=bibtex --overleaf=false --texlive=2022 --docker=false --lang=en --font=default --listings=listings --enquotes=csquotes --tweak_outerquote=babel --todo=pdfcomment --examples=true --howtotext=true`
-  - Run `latexmk` to build the PDF
-- Update npm dependencies
-  - `npx npm-update-all`. See [FreeCodeCamp](https://www.freecodecamp.org/news/10-npm-tricks-that-will-make-you-a-pro-a945982afb25/) for more details.
-  - `npx npm-check-updates -u`. [[Source](https://www.carlrippon.com/upgrading-npm-dependencies/)]
-  - See <https://github.com/yeoman/generator/releases> for changes in the generator.
-  - Generate `package-lock.json` only: `npm i --package-lock-only`
-- When one encounters `Cannot find module 'yeoman-generator'`, please update the npm dependencies.
-  That error occurred when using version `4.13.0` and `5.4.2` was available.
-- In case of the error "Error: EACCES, permission denied '/root/.config/configstore/insight-yo.json'", one needs to execute `chmod g+rwx /root /root/.config /root/.config/configstore`
-- Check GitHub actions
-  - Use [actionlint](https://github.com/rhysd/actionlint#readme)
-  - Use [vs.code GitHub actions plugin](https://marketplace.visualstudio.com/items?itemName=cschleiden.vscode-github-actions)
-- When adding a new package:
-  1. execute `npx` with `--generatereitzig`
-  2. run `pdflatex`
-  3. run `.../generate-texlivefile.sh`
-  4. copy `Texlivefile` to the root of the source repository
-  5. adapt `Texlivefile` as required
-
-### Useful snippets
-
-```ejs
-<% if (howtotext) { -%>
-<% } else { -%>
-<% } -%>
-```
-
-```ejs
-<% switch (documentclass) { case "lncs": -%>
-<% break; case "ieee": -%>
-<% break; default: -%>
-<% break; } -%>
-```
-
-### Debugging
-
-A `launch.json` configured for Windows and Visual Studio Code is included.
-Just press <kbd>F5</kbd> and the generator should run in debug mode.
-
-```terminal
-ejslint.cmd c:\git-repositories\latextemplates\generator-latex-template\generators\app\templates\main.en.tex
-```
-
-### Releasing a new version
-
-1. Update `CHANGELOG.md`
-2. Update `package.json`, publish to [npmjs](https://www.npmjs.com/package/generator-latex-template), create GitHub release.
-   Use [release-it](https://www.npmjs.com/package/release-it) (do not create a release on GitHub) and [github-release-from-changelog](https://www.npmjs.com/package/github-release-from-changelog).
-
-   - `npx release-it`
-   - `npx github-release-from-changelog`
-
-## License
-
-The code is licensed [0BSD](https://choosealicense.com/licenses/0bsd/#), the snippets (both LaTeX and text) 0BSD, too.
-See [benbalter/talks#15](https://github.com/benbalter/talks/issues/15#issuecomment-599704662), for a reasoning, why [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) cannot be used.
-
-`generators/app/templates/splncs04nat.bst` is taken from [tpavlic/splncs04nat](https://github.com/tpavlic/splncs04nat) and is MIT-licensed.
-
-[hyperref]: https://ctan.org/pkg/hyperref
-[listings]: https://ctan.org/pkg/listings
-[minted]: https://ctan.org/pkg/minted
-
-<!-- markdownlint-disable-file MD013 MD033 -->
+To handle numerous clients simultaneously on server-side multi-threading concepts are used. clients are 
+handled by being passed to a threadpool and shared methods between multiple threads are synchronized to avoid 
+the race condition and data loss
