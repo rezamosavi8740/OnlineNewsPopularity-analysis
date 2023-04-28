@@ -1,8 +1,14 @@
 # OnlineNewsPopularity Data
 
-See the **[talk about the generator](https://github.com/dante-ev/Vortraege_Tagungen/blob/master/2019-Herbst/Oliver%20Kopp%20-%20The%20LaTeX%20Template%20Generator%20-%20dante2019-herbst.pdf)** for an overview on the aims and the general concept.
+In this task, we predict the value of the shares column by pre-processing the data and checking different machine-learning models.
 
-## Background information
+## Checking correlation
+
+
+\begin{figure}[h]
+\includegraphics[width=8cm]{plot}
+\end{figure}
+
 
 There are many latex templates out there.
 All of them make use of certain packages such as [hyperref], [listings], or [minted].
