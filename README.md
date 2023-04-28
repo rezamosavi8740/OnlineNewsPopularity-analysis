@@ -1,30 +1,15 @@
 # OnlineNewsPopularity Data
 
+Computer Science student at Shahid Beheshti University
+
+Mathematical sciences' faculty
+  
+### Summary
 In this task, we predict the value of the shares column by pre-processing the data and checking different machine-learning models.
+\
 
 ## Checking correlation
 
-# Divar desktop app
-
-<p align="center">
-  <img src = "Client/src/main/resources/com/example/image/redDivarLogo.png" height = "350">
-</p>
-
-## Developers
-
-**Update Galaxy team:**
-- [**Mohammad Rouintan**](https://github.com/MohammadRouintan)
-- [**Abolfazl Ramezanian**](https://github.com/abolfazl30not30)
-- [**Mahdi Ahmadi**](https://github.com/mr-robber)
-- [**Reza Mosavi**](https://github.com/rezamosavi8740)
-\
-  \
-  _Computer Science students at Shahid Beheshti University_
-  \
-  Mathematical sciences' faculty
-  
-### Summary
-This project is developed as the final project for our advanced Java programming course at SBU.
 \
 Our application is meant to be a template of Divar desktop application.
 ### Features
