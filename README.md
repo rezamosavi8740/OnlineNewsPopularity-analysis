@@ -1,112 +1,122 @@
 # OnlineNewsPopularity Data
-
-Computer Science student at Shahid Beheshti University
-
-Mathematical sciences' faculty
   
-### Summary
+## Summary
+
 In this task, we predict the value of the shares column by pre-processing the data and checking different machine-learning models.
-\
+
+#### Model results with R2_score and training with linear regression without any preprocessing: 0.013436911487878178
+
+#### Model results with R2_score and training with polynomial regression by preprocessing: 0.42482892634462005
+
+
 
 ## Checking correlation
 
-\
-Our application is meant to be a template of Divar desktop application.
-### Features
+  <p align="center">
+    <img src = "images/cor.png" height = "700" width="1000">
+  </p>
+    
+It can be seen that most of the features are not related to the target.
+
+Therefore, it is not possible to remove a feature easily, because it is possible that some features have a non-linear relationship with the target, and also because the coefficients are very close to each other.
+
+So, removing features in relation to their relationship with the target is not a good thing.
+
+
+## Checking the distribution of shares
+
+  <p align="center">
+    <img src = "images/shear-dis.png" height = "700" width="1000">
+  </p>
+
+
+## Remove outlier records
+
+### IQR :
+
+Due to the deletion of a large part of the data, we abandon this method.
+
+### Z-test :
+
+Due to the non-normality of the distribution, we refrain from using this method.
+
+### Percentile:
+
+By removing one percentage of outlier data :‌
+
+  <p align="center">
+    <img src = "images/out.png" height = "700" width="1000">
+  </p>
+
+## Scaling
+
+  -  _Quantile Transformer_
   
-- __**Graphical User Interface**__
-  \
-  \
-  contains an impressive GUI, designed and implemented by JavaFX technology
+  <p align="center">
+    <img src = "images/Q1.png" height = "350">
+  </p>
 
-  -  _login and sign up_
-  
+  - _power transformer_
     <p align="center">
-      <img src = "ReadMeContent/1.png" height = "350">
-    </p>
-
-    <p align="center">
-      <img src = "ReadMeContent/2.png" height = "350">
-    </p>
-
-    <p align="center">
-      <img src = "ReadMeContent/3.png" height = "350">
-    </p>
-
-  - _All Ads Section_
-    <p align="center">
-      <img src = "ReadMeContent/4.png" height = "350">
+      <img src = "images/p1.png" height = "350">
     </p>
   
-  - -full View of Ads-
+  - -min-max-
     <p align="center">
-      <img src = "ReadMeContent/11.png" height = "350">
+      <img src = "images/min-max1.png" height = "350">
     </p>
     
+
+## Again scaling
+
+Now we rescale the data that we scaled with the Quantile Transformer method
+
+
+- __**min-mix**__
+
     <p align="center">
-      <img src = "ReadMeContent/12.png" height = "350">
+      <img src = "images/min-max2.png" height = "350">
     </p>
     
-  - _Categories Section_
+
+A very important point is that all data are normally between 0 and 1.
+
+- __**power transformer**__
+
     <p align="center">
-      <img src = "ReadMeContent/5.png" height = "350">
+      <img src = "images/p2.png" height = "350">
     </p>
     
-  - _Add Ads Section_
+- __**RobustScaler**__
+
     <p align="center">
-      <img src = "ReadMeContent/6.png" height = "350">
-    </p>
-  
-    <p align="center">
-      <img src = "ReadMeContent/7.png" height = "350">
+      <img src = "images/r2.png" height = "350">
     </p>
     
-  - _Chat Section_
+   
+    
+- __**StandardScaler**__
+
     <p align="center">
-      <img src = "ReadMeContent/chat.png" height = "350">
+      <img src = "images/r2.png" height = "350">
     </p>
-   - _My Divar Section_
+    
+    
+## using min-max after Quantile
+
+
     <p align="center">
-      <img src = "ReadMeContent/9.png" height = "350">
-    </p>
-   - -Saved Section-
-    <p align="center">
-      <img src = "ReadMeContent/10.png" height = "350">
+      <img src = "images/dis.png" height = "350">
     </p>
 
 
+## Linear model
 
-- __**Object-orientation**__
+R2_score : 0.15420224054686105
 
-this project is implemented in an absolutely object-oriented approach. since we used Java for this project,
-we tried to use the full power of Java in terms of object orientation. the project is very well organized and maintainable
-because every part of the program is developed within a separate package obviously-named. Each package consists of 
-classes and fxml files of its own. we tried to obey the SOLID rules as much as we could in this project.
+## Polynomial model
 
-
-- __**Version Control tools**__
-
-Our team work was organized and merged and developed upon Git and we made separate branches for different kind of tasks
-and after implementing an specific part of the project the team members would push the changes and notifying the
-maintainer of the project to merge their changes after checking their provided code.
+R2_score : 0.42482892634462005
 
 
-- __**Database**__
-
-For this project MongoDB database is used for storing data on server.
-\
-Here is the schema:
-<p align="center">
-  <img src = "ReadMeContent/Screenshot 2022-07-12 163613.png" height = "350">
-</p>
-
-- __**Socket Programming**__
-
-This project consists of two different applications, a client app and a server app developed by the socket programming tools and 
-concpets in Java
-
-- __**Multi-threading**__
-
-To handle numerous clients simultaneously on server-side multi-threading concepts are used. clients are 
-handled by being passed to a threadpool and shared methods between multiple threads are synchronized to avoid 
-the race condition and data loss
+    
