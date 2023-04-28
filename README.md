@@ -105,9 +105,9 @@ A very important point is that all data are normally between 0 and 1.
 ## using min-max after Quantile
 
 
-    <p align="center">
-      <img src = "images/dis.png" height = "350">
-    </p>
+  <p align="center">
+    <img src = "images/dis.png" height = "350">
+  </p>
 
 
 ## Linear model
