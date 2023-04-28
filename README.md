@@ -3,7 +3,7 @@
 In this task, we predict the value of the shares column by pre-processing the data and checking different machine-learning models.
 
 ## Checking correlation
-(http://img.shields.io/npm/v/generator-latex-template.svg?style=flat)
+[![npm version](image/cor.png)]
 
 # LaTeX Template Generator [![npm version](http://img.shields.io/npm/v/generator-latex-template.svg?style=flat)](https://npmjs.org/package/generator-latex-template "View this project on npm")
 
