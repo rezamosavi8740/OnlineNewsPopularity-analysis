@@ -1,4 +1,6 @@
 # OnlineNewsPopularity Data
+
+This dataset has been widely used for research and education purposes, particularly in the field of machine learning and data analysis, to explore how different factors influence the popularity of online news articles. However, as it's been some time since my last update, I recommend checking the UCI Machine Learning Repository or other reliable sources for the most up-to-date information on the "OnlineNewsPopularity" dataset.
   
 ## Summary
 
